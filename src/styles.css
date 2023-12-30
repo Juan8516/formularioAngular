@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+}
+
+.header {
+  display: grid;
+  justify-content: center;
+}
+
+.text {
+  font-family: monospace;
+  font-size: 18px;
+
+  td {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  dd {
+    margin: 0 auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+}
+
+button {
+  margin-right: 10px;
+}
