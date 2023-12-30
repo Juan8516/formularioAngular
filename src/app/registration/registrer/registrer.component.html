@@ -1,1 +1,29 @@
-<p>registrer works!</p>
+<h1 class="header">{{name}}</h1>
+
+<div class="text">
+  <dl>
+    <td>Nombre: </td>
+    <dd>{{name}}</dd>
+
+    <td>Edad: </td>
+    <dd>{{age}}</dd>
+
+    <td>Metodo: </td>
+    <dd>{{getHeroDescription()}}</dd>
+
+    <td>Capitalizado: </td>
+    <dd>{{capitalizedName}}</dd>
+  </dl>
+</div>
+
+<div class="boton">
+  <button (click)="changeName()">
+    Cambiar Nombre
+  </button>
+
+  <button (click)="changeAge()">
+    Cambiar Edad
+  </button>
+</div>
+
+
