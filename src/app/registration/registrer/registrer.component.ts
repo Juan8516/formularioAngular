@@ -25,4 +25,9 @@ export class RegistrerComponent {
     this.age = 3;
   }
 
+  resetForm(): void {
+    this.name = 'Juan Manuel';
+    this.age  = 38;
+  }
+
 }

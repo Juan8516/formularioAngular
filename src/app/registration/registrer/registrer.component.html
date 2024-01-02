@@ -17,13 +17,22 @@
 </div>
 
 <div class="boton">
-  <button (click)="changeName()">
+  <button
+    *ngIf="name !== 'Simon'"
+    (click)="changeName()">
     Cambiar Nombre
   </button>
 
-  <button (click)="changeAge()">
+  <button
+    *ngIf="age !== 3"
+    (click)="changeAge()">
     Cambiar Edad
   </button>
+
+  <button
+  (click)="resetForm()">
+  Reset
+</button>
 </div>
 
 
