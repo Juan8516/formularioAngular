@@ -1,1 +1,16 @@
-<p>list works!</p>
+<h1>Listado de usurios</h1>
+
+<h3>El usuario borrado fue: </h3>
+<h3>No se ha borrado ningun usuario</h3>
+
+<button>
+  Borrar ultimo usuario
+</button>
+
+
+<ul class="typeFont">
+  <form class="elements">
+    <li *ngFor="let names of listNames">{{names}}</li>
+  </form>
+
+</ul>
