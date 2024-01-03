@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;900&family=Long+Cang&display=swap');
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -11,32 +14,67 @@ html {
   box-sizing: inherit;
 }
 
+title {
+  margin-left: 15rem;
+}
+
+body {
+  background-color: #011201;
+}
+
+form {
+  margin: 0 auto;
+  width: 300px;
+}
+
+p, h1, h2, h3, dd, td {
+  color: white;
+}
+
 h1 {
-  display: flex;
-  justify-content: center;
-  font-family: cursive;
+  margin-top: 2rem;
+  margin-left: 15rem;
+  font-family: 'Heebo', sans-serif;
+}
+
+td {
+  margin: 1rem;
+  font-family: 'Heebo', sans-serif;
+  font-size:1.52rem;
+}
+
+dd {
+  margin: 1rem;
+  font-family: 'Heebo', sans-serif;
+  font-size: 2rem;
+  font-style: bold;
 }
 
 .header {
-  display: grid;
-  justify-content: center;
+  margin-left: 60rem;
+  margin-bottom: 1rem;
+  font-family: 'Heebo', sans-serif;
+  font-size: 900;
 }
 
-.text {
-  font-family: monospace;
-  font-size: 18px;
-
-  td {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  }
-
-  dd {
-    margin: 0 auto;
-    margin-top: 2px;
-    margin-bottom: 2px;
-  }
+.btn {
+  border-radius: 3px;
+  display: inline-block;
+  padding: 15px 10px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
 
-button {
-  margin-right: 10px;
+.btn-green {
+  color: white;
+  background-color: #3cc93F;
+}
+
+.btn-green:hover {
+  background-color: #37B839;
+}
+
+.btn-green:active {
+  background-color: #29962A;
 }

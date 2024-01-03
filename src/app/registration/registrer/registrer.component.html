@@ -1,38 +1,39 @@
 <h1 class="header">{{name}}</h1>
 
-<div class="text">
-  <dl>
-    <td>Nombre: </td>
-    <dd>{{name}}</dd>
+<form action="">
+  <td>Nombre: </td>
+  <dd>{{name}}</dd>
 
-    <td>Edad: </td>
-    <dd>{{age}}</dd>
+  <td>Edad: </td>
+  <dd>{{age}}</dd>
 
-    <td>Metodo: </td>
-    <dd>{{getHeroDescription()}}</dd>
+  <td>Metodo: </td>
+  <dd>{{getHeroDescription()}}</dd>
 
-    <td>Capitalizado: </td>
-    <dd>{{capitalizedName}}</dd>
-  </dl>
-</div>
+  <td>Capitalizado: </td>
+  <dd>{{capitalizedName}}</dd>
 
-<div class="boton">
   <button
+    class="btn btn-green"
     *ngIf="name !== 'Simon'"
     (click)="changeName()">
     Cambiar Nombre
   </button>
 
   <button
+    class="btn btn-green"
     *ngIf="age !== 3"
     (click)="changeAge()">
     Cambiar Edad
   </button>
 
   <button
-  (click)="resetForm()">
-  Reset
-</button>
-</div>
+    class="btn btn-green"
+    (click)="resetForm()">
+    Reset
+  </button>
+</form>
+<hr>
+
 
 
