@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './list.component.css'
 })
 export class ListComponent {
-  public listNames: string[] = ['Juan', 'Paula', 'Simon', 'Lucelly', 'Emilio'];
+  public listNames    : string[] = ['Juan', 'Adolfo', 'Sergio', 'Fernanda', 'Emilio'];
+  public deletedUser? : string;
+
+  deleteLastUser(): void {
+    this.deletedUser = this.listNames.pop();
+  }
 }

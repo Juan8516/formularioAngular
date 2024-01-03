@@ -78,3 +78,7 @@ dd {
 .btn-green:active {
   background-color: #29962A;
 }
+
+.elements {
+  color: white;
+}
