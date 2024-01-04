@@ -1,16 +1,29 @@
-<h1>Listado de usuarios</h1>
-<hr>
 
-<h3>El usuario borrado fue: {{ deletedUser }} </h3>
-<h3>No se ha borrado ningun usuario</h3>
+  <h1>Listado de usuarios</h1>
+  <hr>
 
-<button (click)="deleteLastUser()">
+<div class="containerList">
+  <div>
+    <h3 *ngIf="deletedUser; else nothingWasDelete">
+      El usuario borrado fue: {{ deletedUser }} </h3>
+  </div>
+
+  <ng-template #nothingWasDelete>
+    <h3>No se ha borrado ningun usuario</h3>
+  </ng-template>
+
+  <ul class="typeFont">
+    <form class="elements">
+      <li *ngFor="let names of listNames">{{ names }}</li>
+    </form>
+  </ul>
+</div>
+
+<button
+  class="btn btn-green container"
+  (click)="deleteLastUser()">
   Borrar ultimo usuario
 </button>
 
 
-<ul class="typeFont">
-  <form class="elements">
-    <li *ngFor="let names of listNames">{{ names }}</li>
-  </form>
-</ul>
+

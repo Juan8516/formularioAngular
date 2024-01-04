@@ -37,6 +37,11 @@ h1 {
   font-family: 'Heebo', sans-serif;
 }
 
+h3 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 1.52rem;
+}
+
 td {
   margin: 1rem;
   font-family: 'Heebo', sans-serif;
@@ -81,4 +86,18 @@ dd {
 
 .elements {
   color: white;
+  font-family: 'Heebo', sans-serif;
+  font-size: 1.8rem;
+  font-size: 400;
+  margin-left: 3.2rem;
+}
+
+.containerList {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.container {
+  margin-left: 300px;
 }
