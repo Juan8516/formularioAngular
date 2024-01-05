@@ -2,19 +2,18 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+import { RegistrerUser } from './registration/components/register.module';
+
 import { AppComponent } from './app.component';
-import { RegistrerComponent } from './registration/registrer/registrer.component';
-import { ListComponent } from './registration/list/list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegistrerComponent,
-    ListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RegistrerUser,
   ],
   providers: [],
   bootstrap: [AppComponent]
